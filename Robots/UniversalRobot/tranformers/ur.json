@@ -1,0 +1,23 @@
+{
+  "_class": "UR",
+  "transformer": "UR",
+  "commands": {
+    "play_program": {
+      "arg": ""
+    },
+    "unlock_protective_stop": {
+      "arg": ""
+    },
+    "reset_safety": {
+      "arg": ""
+    },
+    "set_value": {
+      "key": "",
+      "value": ""
+    }
+  },
+  "metaData": {
+    "ip_address": "",
+    "port": "49495"
+  }
+}

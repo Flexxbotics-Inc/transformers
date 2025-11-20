@@ -1,0 +1,8 @@
+{
+  "_class": "com.flexxbotics.beans.EquipmentDefinition",
+  "controller": "E-Series",
+  "manufacturer": "Universal Robots",
+  "machineModel": "UR5e",
+  "transformer": "UR",
+  "type": "6-Axis Robot"
+}
