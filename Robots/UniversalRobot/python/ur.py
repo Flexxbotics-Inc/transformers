@@ -138,12 +138,14 @@ class UR(AbstractDevice):
         :author:    tylerjm@flexxbotics.com
         :since:     ODOULS.3 (7.1.15.3)
         """
-        # Parse the command from the incoming request
-        args = json.loads(command_args)
-        response = ""
-
-        self._info(message="Sending command: " + command_name)
         try:
+            # Parse the command from the incoming request
+            args = json.loads(command_args)
+            response = ""
+            args = json.loads(args["value"])
+
+            self._info(message="Sending command: " + command_name)
+            
             # Move to joints requires a longer timeout
             if command_name == "move_to_joints":
                 socket.setdefaulttimeout(int(args["timeout"]))
